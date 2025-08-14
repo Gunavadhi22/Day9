@@ -1,0 +1,25 @@
+package DAY9;
+
+interface sum {
+    int max = 100; 
+    void show();
+
+    static void display() { 
+        System.out.println("displaying");
+    }
+}
+
+class guna implements sum {
+    public void show() {
+        System.out.println("showing");
+    }
+}
+
+public class interfaceexample {
+    public static void main(String[] args) {
+        sum.display(); 
+        guna obj = new guna(); 
+        obj.show(); 
+        
+    }
+}
